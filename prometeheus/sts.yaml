@@ -36,7 +36,7 @@ spec:
           mountPath: /etc/prometheus
         - name: data
           mountPath: /prometheus
-    volumes:
+      volumes:
       - name: config-volume
         configMap:
           name: config-prometheus
