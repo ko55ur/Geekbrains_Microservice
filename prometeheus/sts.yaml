@@ -40,7 +40,9 @@ spec:
       - name: config-volume
         configMap:
           name: config-prometheus
-        
+          items:
+            - key: prometheus.yml
+              path: prometheus.yml
   volumeClaimTemplates:
   - metadata:
       name: data
